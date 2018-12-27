@@ -1,0 +1,15 @@
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\bin\Debug\netstandard2.0\ServerPerformanceReportsBO.deps.json
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\bin\Debug\netstandard2.0\ServerPerformanceReportsBO.dll
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\bin\Debug\netstandard2.0\ServerPerformanceReportsBO.pdb
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\bin\Debug\netstandard2.0\EntityLayer.dll
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\bin\Debug\netstandard2.0\ServerPerformanceReportsDAO.dll
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\bin\Debug\netstandard2.0\System.Data.SQLite.dll
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\bin\Debug\netstandard2.0\EntityLayer.pdb
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\bin\Debug\netstandard2.0\ServerPerformanceReportsDAO.pdb
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\obj\Debug\netstandard2.0\ServerPerformanceReportsBO.csprojAssemblyReference.cache
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\obj\Debug\netstandard2.0\ServerPerformanceReportsBO.csproj.CoreCompileInputs.cache
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\obj\Debug\netstandard2.0\ServerPerformanceReportsBO.AssemblyInfoInputs.cache
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\obj\Debug\netstandard2.0\ServerPerformanceReportsBO.AssemblyInfo.cs
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\obj\Debug\netstandard2.0\ServerPerformanceReportsBO.csproj.CopyComplete
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\obj\Debug\netstandard2.0\ServerPerformanceReportsBO.dll
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsBO\obj\Debug\netstandard2.0\ServerPerformanceReportsBO.pdb

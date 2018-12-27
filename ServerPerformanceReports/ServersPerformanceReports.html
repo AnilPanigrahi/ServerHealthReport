@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .menu {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+
+            .menu a {
+                background-color: #e5e5e5;
+                padding: 8px;
+                margin-top: 7px;
+                display: block;
+                width: 100%;
+                color: black;
+            }
+
+        .main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+        }
+
+        .right {
+            background-color: #e5e5e5;
+            float: left;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:620px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        function PopulateAvailableServersList() {
+            var ddlServers = document.getElementById("selectServers");
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var serversLists = JSON.parse(this.responseText);
+                    for (var i in serversLists) {
+                        var option = document.createElement("option");
+                        option.innerHTML = serversLists[i].serverName;
+                        option.value = serversLists[i].serverId;
+                        ddlServers.options.add(option);
+                    }
+                }
+            };
+            xhttp.open("GET", "http://localhost:50524/servers/GetAvailableServers", true);
+            xhttp.send();
+        }
+
+        function clearTableData() {
+            var table = document.getElementById("serverTable");
+            while (table.rows.length > 1) {
+                table.deleteRow(1);
+            }
+        }
+
+        function serverSelected(selectObj) {
+            var idx = selectObj.selectedIndex;
+            var selectId = selectObj.options[idx].value;
+            var url = "";
+            clearTableData();
+
+            if (selectId) {
+                if (selectId == "GetAll") {
+                    url = "http://localhost:50524/servers/GetAllServerDetails";
+                }
+                else {
+                    url = "http://localhost:50524/servers/get" + "/" + selectId;
+                }
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var serversLists = JSON.parse(this.responseText);
+                        var table = document.getElementById("serverTable");
+                        if (Array.isArray(serversLists)) {
+                            for (var i = 0; i < serversLists.length; i++) {
+                                debugger;
+                                var row = table.insertRow(-1);
+                                var cell1 = row.insertCell(-1);
+                                cell1.innerHTML = serversLists[i].serverName;
+                                var cell2 = row.insertCell(-1);
+                                cell2.innerHTML = serversLists[i].cpuUsage;
+                                var cell3 = row.insertCell(-1);
+                                cell3.innerHTML = serversLists[i].memoryUsage;
+                                var cell4 = row.insertCell(-1);
+                                cell4.innerHTML = serversLists[i].diskSpace;
+                            }
+                        }
+                        else {
+                                var row = table.insertRow(-1);
+                                var cell1 = row.insertCell(-1);
+                                cell1.innerHTML = serversLists.serverName;
+                                var cell2 = row.insertCell(-1);
+                                cell2.innerHTML = serversLists.cpuUsage;
+                                var cell3 = row.insertCell(-1);
+                                cell3.innerHTML = serversLists.memoryUsage;
+                                var cell4 = row.insertCell(-1);
+                                cell4.innerHTML = serversLists.diskSpace;
+                            }
+                        }
+                        
+                    }
+                };
+                xhttp.open("GET", url, true);
+                xhttp.send();
+            }
+
+
+    </script>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;" onload="PopulateAvailableServersList()">
+
+    <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+        <h1>Servers Health Report</h1>
+    </div>
+
+    <div class="main">
+        <div class="form-group">
+            <label for="sel1">Select server (select one):</label>
+            <select class="form-control" id="selectServers" onchange="serverSelected(this);">
+                <option value="" selected="selected">----</option>
+                <option value="GetAll">GetAll</option>
+            </select>
+        </div>
+
+        <div class="container">
+           
+            <table class="table table-hover" id="serverTable">
+                <thead>
+                    <tr>
+                        <th>ServerName</th>
+                        <th>CPU Usage</th>
+                        <th>Memory Usage</th>
+                        <th>Disk Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\bin\Debug\netstandard2.0\ServerPerformanceReportsDAO.deps.json
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\bin\Debug\netstandard2.0\ServerPerformanceReportsDAO.dll
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\bin\Debug\netstandard2.0\ServerPerformanceReportsDAO.pdb
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\bin\Debug\netstandard2.0\EntityLayer.dll
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\bin\Debug\netstandard2.0\System.Data.SQLite.dll
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\bin\Debug\netstandard2.0\EntityLayer.pdb
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\obj\Debug\netstandard2.0\ServerPerformanceReportsDAO.csprojAssemblyReference.cache
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\obj\Debug\netstandard2.0\ServerPerformanceReportsDAO.csproj.CoreCompileInputs.cache
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\obj\Debug\netstandard2.0\ServerPerformanceReportsDAO.AssemblyInfoInputs.cache
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\obj\Debug\netstandard2.0\ServerPerformanceReportsDAO.AssemblyInfo.cs
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\obj\Debug\netstandard2.0\ServerPerformanceReportsDAO.csproj.CopyComplete
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\obj\Debug\netstandard2.0\ServerPerformanceReportsDAO.dll
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\ServerPerformanceReportsDAO\obj\Debug\netstandard2.0\ServerPerformanceReportsDAO.pdb

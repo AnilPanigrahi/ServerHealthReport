@@ -1,0 +1,6 @@
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\Vijay\Desktop\SourceCode\ServerPerformanceReports\EntityLayer\obj\Debug\EntityLayer.csprojAssemblyReference.cache
